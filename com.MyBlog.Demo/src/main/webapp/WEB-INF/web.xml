@@ -1,0 +1,36 @@
+<web-app>
+
+   <servlet>
+  	<servlet-name>RegisterServ</servlet-name>
+  	<servlet-class>com.MyBlog.servlets.RegisterServ</servlet-class>
+  </servlet>
+  
+  <servlet>
+  	<servlet-name>LoginServ</servlet-name>
+  	<servlet-class>com.MyBlog.servlets.LoginServ</servlet-class>
+  </servlet>
+  
+  <servlet>
+  	<servlet-name>LogoutServ</servlet-name>
+  	<display-name>LogoutServ</display-name>
+  	<description></description>
+  	<servlet-class>com.MyBlog.servlets.LogoutServ</servlet-class>
+  </servlet>
+  
+
+    <servlet-mapping>
+    	<servlet-name>RegisterServ</servlet-name>
+    	<url-pattern>/RegisterServ</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+    	<servlet-name>LoginServ</servlet-name>
+    	<url-pattern>/LoginServ</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+    	<servlet-name>LogoutServ</servlet-name>
+    	<url-pattern>/LogoutServ</url-pattern>
+    </servlet-mapping>
+ 
+</web-app>
